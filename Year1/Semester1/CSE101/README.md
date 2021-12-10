@@ -12,7 +12,7 @@ Introduction of Computer Science
 | **Course Semester** | 1 / 8 |
 | **Course Code** | CSE 101 |
 | **Course Title** | Introduction of Computer Science |
-| **Lecturer** | Prof. Hacı Ali MANTAR |
+| **Lecturer** | Hacı Ali MANTAR |
 | **Teaching Assistant** |  |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |

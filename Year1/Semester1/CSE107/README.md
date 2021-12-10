@@ -12,7 +12,7 @@ Introduction of Computer Science Laboratory
 | **Course Semester** | 1 / 8 |
 | **Course Code** | CSE 107 |
 | **Course Title** | Introduction of Computer Science Laboratory |
-| **Lecturer** | Prof. Hacı Ali MANTAR |
+| **Lecturer** | Hacı Ali MANTAR |
 | **Teaching Assistant** |  |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |

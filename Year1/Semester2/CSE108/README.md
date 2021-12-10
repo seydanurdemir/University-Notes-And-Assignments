@@ -12,7 +12,7 @@ Computer Programming Laboratory
 | **Course Semester** | 2 / 8 |
 | **Course Code** | CSE 108 |
 | **Course Title** | Computer Programming Laboratory |
-| **Lecturer** | Doç. Dr. Fatih Erdoğan SEVİLGEN |
+| **Lecturer** | Fatih Erdoğan SEVİLGEN |
 | **Teaching Assistant** | Nurbanu ALBAYRAK, Evren ÇİFÇİ, Abdullah AKAY |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
