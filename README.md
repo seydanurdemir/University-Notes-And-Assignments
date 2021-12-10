@@ -60,15 +60,15 @@ You can find quick links to the courses folders here.
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
-| 7 | CSE 495 | Graduation Project I | C | 6 | 1 | 4+0+0 |
-| 8 | CSE 496 | Graduation Project II | C | 6 | 1 | 4+0+0 |
+| [7](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/) | [CSE 495](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/CSE-495/) | Graduation Project I | C | 6 | 1 | 4+0+0 |
+| [8](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester8/) | [CSE 496](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester8/CSE-496/) | Graduation Project II | C | 6 | 1 | 4+0+0 |
 
 ## Department Internship Courses
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
-| 5 | ENG 300 | Career Internship I | C | 1 | 0.5 | 0+6+0 |
-| 7 | ENG 400 | Career Internship II | C | 1 | 0.5 | 0+0+6 |
+| [5](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/) | [ENG 300](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/ENG-300/) | Career Internship I | C | 1 | 0.5 | 0+6+0 |
+| [7](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/) | [ENG 400](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/ENG-400/) | Career Internship II | C | 1 | 0.5 | 0+0+6 |
 
 ## Faculty Common Courses
 
