@@ -43,20 +43,20 @@ You can find quick links to the courses folders here.
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | FElec1 <br> ENG 151 | Free Elective 1 <br> Science and Technology| O | 2 | 2 | 2+0+0 |
 | 2 | FElec2 <br> BIL 100| Free Elective 2 <br> Computer Orientation | O | 2 | 2 | 2+0+0 |
-| 3 | NonTElec3 <br> MUH 251 | Non-Technical Elective 3 <br> Bilim Metodolojisi | O | 3 | 2 | 2+0+0 |
-| 4 | NonTElec4 <br> MUH 250 | Non-Technical Elective 4 <br> Ekonomi | O | 3 | 2 | 2+0+0 |
-| 5 | NonTElec5 <br> ISL 351 | Non-Technical Elective 5 <br> Isletmeye Giris | O | 3 | 2 | 2+0+0 |
-| 6 | NonTElec6 <br> MUH 350 | Non-Technical Elective 6 <br> Is Hukuku | O | 3 | 2 | 2+0+0 |
-| 7 | DElec7 <br> CSE 414 | Departmental Elective 7 (I) <br> Data Mining | O | 6 | 3 | 3+0+0 |
-| 7 | DElec7 <br> CSE 470 | Departmental Elective 7 (III) <br> Crypthography and Computer Security | O | 6 | 3 | 3+0+0 |
-| 7 | DElec7 <br> CSE 476 | Departmental Elective 7 (V) <br> Mobile Communication Networks | O | 6 | 3 | 3+0+0 |
-| 7 | NonTElec7 <br> MUH 451 | Non-Technical Elective 7 (I) <br> Girişimcilik | O | 3 | 2 | 2+0+0 |
-| 7 | NonTElec7 <br> MUH 453 | Non-Technical Elective 7 (II) <br> Fikri ve Sınai Mülkiyet Hakları | O | 3 | 2 | 2+0+0 |
-| 8 | DElec8 <br> CSE 414 | Departmental Elective 8 (II) <br> Databases| O | 6 | 3 | 3+0+0 |
-| 8 | DElec8 <br> CSE 473 | Departmental Elective 8 (IV) <br> Network and Information Security| O | 6 | 3 | 3+0+0 |
-| 8 | DElec8 <br> CSE 436 | Departmental Elective 8 (VI) <br> Introduction To Digital Integrated Circuits | O | 6 | 3 | 3+0+0 |
-| 8 | NonTElec7 <br> MUH 452 | Non-Technical Elective 8 (I) <br> Teknolojik Girişimcilik | O | 3 | 2 | 2+0+0 |
-| 8 | NonTElec7 <br> MUH 454 | Non-Technical Elective 8 (II) <br> Patent Tescili ve Tarifname Hazırlama | O | 3 | 2 | 2+0+0 |
+| 3 | NonTElec3 <br> [MUH 251](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/MUH-251/) | Non-Technical Elective 3 <br> Bilim Metodolojisi | O | 3 | 2 | 2+0+0 |
+| 4 | NonTElec4 <br> [MUH 250](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/MUH-250/) | Non-Technical Elective 4 <br> Ekonomi | O | 3 | 2 | 2+0+0 |
+| 5 | NonTElec5 <br> [ISL 351](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/ISL-351/) | Non-Technical Elective 5 <br> Isletmeye Giris | O | 3 | 2 | 2+0+0 |
+| 6 | NonTElec6 <br> [MUH 350](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/MUH-350/) | Non-Technical Elective 6 <br> Is Hukuku | O | 3 | 2 | 2+0+0 |
+| 7 | DElec7 <br> [CSE 454](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/CSE-454/) | Departmental Elective 7 (I) <br> Data Mining | O | 6 | 3 | 3+0+0 |
+| 7 | DElec7 <br> [CSE 470](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/CSE-470/) | Departmental Elective 7 (III) <br> Crypthography and Computer Security | O | 6 | 3 | 3+0+0 |
+| 7 | DElec7 <br> [CSE 476](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/CSE-476/) | Departmental Elective 7 (V) <br> Mobile Communication Networks | O | 6 | 3 | 3+0+0 |
+| 7 | NonTElec7 <br> [MUH 451](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/MUH-451/) | Non-Technical Elective 7 (I) <br> Girişimcilik | O | 3 | 2 | 2+0+0 |
+| 7 | NonTElec7 <br> [MUH 453](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/MUH-453/) | Non-Technical Elective 7 (II) <br> Fikri ve Sınai Mülkiyet Hakları | O | 3 | 2 | 2+0+0 |
+| 8 | DElec8 <br> [CSE 414](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester8/CSE-414/) | Departmental Elective 8 (II) <br> Databases| O | 6 | 3 | 3+0+0 |
+| 8 | DElec8 <br> [CSE 473](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester8/CSE-473/) | Departmental Elective 8 (IV) <br> Network and Information Security| O | 6 | 3 | 3+0+0 |
+| 8 | DElec8 <br> [CSE 436](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester7/CSE-436/) | Departmental Elective 8 (VI) <br> Introduction To Digital Integrated Circuits | O | 6 | 3 | 3+0+0 |
+| 8 | NonTElec7 <br> [MUH 452](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester8/MUH-452/) | Non-Technical Elective 8 (I) <br> Teknolojik Girişimcilik | O | 3 | 2 | 2+0+0 |
+| 8 | NonTElec7 <br> [MUH 454](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year4/Semester8/MUH-454/) | Non-Technical Elective 8 (II) <br> Patent Tescili ve Tarifname Hazırlama | O | 3 | 2 | 2+0+0 |
 
 ## Department Graduation Projects
 
