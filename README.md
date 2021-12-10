@@ -41,20 +41,22 @@ You can find quick links to the courses folders here.
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | FElec1 | Free Elective 1 | O | 2 | 2 | 2+0+0 |
-| 2 | FElec2 | Free Elective 2 | O | 2 | 2 | 2+0+0 |
-| 3 | NonTElec3 | Non-Technical Elective 3 | O | 3 | 2 | 2+0+0 |
-| 4 | NonTElec4 | Non-Technical Elective 4 | O | 3 | 2 | 2+0+0 |
-| 5 | NonTElec5 | Non-Technical Elective 5 | O | 3 | 2 | 2+0+0 |
-| 6 | NonTElec6 | Non-Technical Elective 6 | O | 3 | 2 | 2+0+0 |
-| 7 | DElec7 | Departmental Elective 7 (I) | O | 6 | 3 | 3+0+0 |
-| 7 | DElec7 | Departmental Elective 7 (III) | O | 6 | 3 | 3+0+0 |
-| 7 | DElec7 | Departmental Elective 7 (V) | O | 6 | 3 | 3+0+0 |
-| 7 | NonTElec7 | Non-Technical Elective 7 | O | 3 | 2 | 2+0+0 |
-| 8 | DElec8 | Departmental Elective 8 (II) | O | 6 | 3 | 3+0+0 |
-| 8 | DElec8 | Departmental Elective 8 (IV) | O | 6 | 3 | 3+0+0 |
-| 8 | DElec8 | Departmental Elective 8 (VI) | O | 6 | 3 | 3+0+0 |
-| 8 | NonTElec7 | Non-Technical Elective 8 | O | 3 | 2 | 2+0+0 |
+| 1 | FElec1 <br> ENG 151 | Free Elective 1 | O | 2 | 2 | 2+0+0 |
+| 2 | FElec2 <br> BIL 100| Free Elective 2 | O | 2 | 2 | 2+0+0 |
+| 3 | NonTElec3 <br> MUH 251 | Non-Technical Elective 3 | O | 3 | 2 | 2+0+0 |
+| 4 | NonTElec4 <br> MUH 250 | Non-Technical Elective 4 | O | 3 | 2 | 2+0+0 |
+| 5 | NonTElec5 <br> ISL 351 | Non-Technical Elective 5 | O | 3 | 2 | 2+0+0 |
+| 6 | NonTElec6 <br> MUH 350 | Non-Technical Elective 6 | O | 3 | 2 | 2+0+0 |
+| 7 | DElec7 <br> CSE 414 | Departmental Elective 7 (I) <br> Data Mining | O | 6 | 3 | 3+0+0 |
+| 7 | DElec7 <br> CSE 470 | Departmental Elective 7 (III) <br> Crypthography and Computer Security | O | 6 | 3 | 3+0+0 |
+| 7 | DElec7 <br> CSE 476 | Departmental Elective 7 (V) <br> Mobile Communication Networks | O | 6 | 3 | 3+0+0 |
+| 7 | NonTElec7 <br> MUH 451 | Non-Technical Elective 7 (I) <br> Girişimcilik | O | 3 | 2 | 2+0+0 |
+| 7 | NonTElec7 <br> MUH 453 | Non-Technical Elective 7 (II) <br> Fikri ve Sınai Mülkiyet Hakları | O | 3 | 2 | 2+0+0 |
+| 8 | DElec8 <br> CSE 414 | Departmental Elective 8 (II) <br> Databases| O | 6 | 3 | 3+0+0 |
+| 8 | DElec8 <br> CSE 473 | Departmental Elective 8 (IV) <br> Network and Information Security| O | 6 | 3 | 3+0+0 |
+| 8 | DElec8 <br> CSE 436 | Departmental Elective 8 (VI) <br> Introduction To Digital Integrated Circuits | O | 6 | 3 | 3+0+0 |
+| 8 | NonTElec7 <br> MUH 452 | Non-Technical Elective 8 (I) <br> Teknolojik Girişimcilik | O | 3 | 2 | 2+0+0 |
+| 8 | NonTElec7 <br> MUH 454 | Non-Technical Elective 8 (II) <br> Patent Tescili ve Tarifname Hazırlama | O | 3 | 2 | 2+0+0 |
 
 ## Department Graduation Projects
 
