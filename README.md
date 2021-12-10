@@ -32,7 +32,7 @@ You can find quick links to the courses folders here.
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | CSE 101 | [https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester1/CSE101](Introduction to Computer Science) | C | 8 | 3.5 | 3+0+0 |
+| 1 | CSE 101 | [Introduction to Computer Science](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester1/CSE101) | C | 8 | 3.5 | 3+0+0 |
 | 1 | CSE 107 | Introduction to Computer Science Laboratory | C | 2 | 1 | 0+0+2 |
 | 2 | CSE 102 | Computer Programming | C | 8 | 4.5 | 4+0+0 |
 | 2 | CSE 108 | Computer Programming Laboratory | C | 2 | 1 | 0+0+2 |
