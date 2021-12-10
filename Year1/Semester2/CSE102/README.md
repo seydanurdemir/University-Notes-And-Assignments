@@ -12,8 +12,8 @@ Computer Programming
 | **Course Semester** | 2 / 8 |
 | **Course Code** | CSE 102 |
 | **Course Title** | Computer Programming|
-| **Lecturer** | Doc. Fatih Erdoğan SEVİLGEN |
-| **Teaching Assistant** | Abdullah AKAY, Evren ÇİFÇİ |
+| **Lecturer** | Doç. Dr. Fatih Erdoğan SEVİLGEN |
+| **Teaching Assistant** | Nurbanu ALBAYRAK, Evren ÇİFÇİ, Abdullah AKAY |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
 | **Letter Grade** | BA |
