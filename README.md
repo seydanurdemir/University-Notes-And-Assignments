@@ -118,7 +118,7 @@ You can find quick links to the courses folders here.
 | 7 | ENG 401 | Occupational Health and Safety I | C | 1 | 1 | 1+0+0 |
 | 8 | ENG 402 | Occupational Health and Safety II | C | 1 | 1 | 1+0+0 |
 
-## Removed or Extra Courses
+## Extra Taken or Removed Courses
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
