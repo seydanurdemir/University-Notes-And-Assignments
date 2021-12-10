@@ -56,7 +56,7 @@ You can find quick links to the courses folders here.
 | 8 | DElec8 | Departmental Elective 8 (VI) | O | 6 | 3 | 3+0+0 |
 | 8 | NonTElec7 | Non-Technical Elective 8 | O | 3 | 2 | 2+0+0 |
 
-## Department Internship Courses
+## Department Graduation Projects
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
