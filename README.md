@@ -83,7 +83,7 @@ You can find quick links to the courses folders here.
 | 7 | ENG 401 | Occupational Health and Safety I | C | 1 | 1 | 1+0+0 |
 | 8 | ENG 402 | Occupational Health and Safety II | C | 1 | 1 | 1+0+0 |
 
-## Thanks for Contribution
+## Thanks for Contributions
 
 Thank you to all my friends who contributed.
 
