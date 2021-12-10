@@ -47,10 +47,21 @@ You can find quick links to the courses folders here.
 | 4 | NonTElec4 | Non-Technical Elective 4 | O | 3 | 2 | 2+0+0 |
 | 5 | NonTElec5 | Non-Technical Elective 5 | O | 3 | 2 | 2+0+0 |
 | 6 | NonTElec6 | Non-Technical Elective 6 | O | 3 | 2 | 2+0+0 |
-| 7 | DElec7 | Departmental Elective 7 | O | 6 | 3 | 3+0+0 |
+| 7 | DElec7 | Departmental Elective 7 (I) | O | 6 | 3 | 3+0+0 |
+| 7 | DElec7 | Departmental Elective 7 (III) | O | 6 | 3 | 3+0+0 |
+| 7 | DElec7 | Departmental Elective 7 (V) | O | 6 | 3 | 3+0+0 |
 | 7 | NonTElec7 | Non-Technical Elective 7 | O | 3 | 2 | 2+0+0 |
-| 8 | DElec8 | Departmental Elective 8 | O | 6 | 3 | 3+0+0 |
+| 8 | DElec8 | Departmental Elective 8 (II) | O | 6 | 3 | 3+0+0 |
+| 8 | DElec8 | Departmental Elective 8 (IV) | O | 6 | 3 | 3+0+0 |
+| 8 | DElec8 | Departmental Elective 8 (VI) | O | 6 | 3 | 3+0+0 |
 | 8 | NonTElec7 | Non-Technical Elective 8 | O | 3 | 2 | 2+0+0 |
+
+## Department Internship Courses
+
+| Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
+| --- | --- | --- | --- | --- | --- | --- |
+| 7 | CSE 495 | Graduation Project I | C | 6 | 1 | 4+0+0 |
+| 8 | CSE 496 | Graduation Project II | C | 6 | 1 | 4+0+0 |
 
 ## Department Internship Courses
 
