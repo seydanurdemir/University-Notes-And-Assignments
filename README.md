@@ -109,9 +109,9 @@ You can find quick links to the courses folders here.
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | HIS 101 | Principles of Atatürk and the History of Turkish Revolution I | C | 2 | 2 | 2+0+0 |
+| 1 | HIS 101 | Principles of Atatürk and <br>the History of Turkish Revolution I | C | 2 | 2 | 2+0+0 |
 | 1 | TUR 101 | Turkish I | C | 2 | 2 | 2+0+0 |
-| 2 | HIS 102 | Principles of Atatürk and the History of Turkish Revolution II | C | 2 | 2 | 2+0+0 |
+| 2 | HIS 102 | Principles of Atatürk and <br>the History of Turkish Revolution II | C | 2 | 2 | 2+0+0 |
 | 2 | TUR 102 | Turkish II | C | 2 | 2 | 2+0+0 |
 | 3 | ENGL 111 | English I | C | 2 | 2 | 2+0+0 |
 | 4 | ENGL 112 | English II | C | 2 | 2 | 2+0+0 |
