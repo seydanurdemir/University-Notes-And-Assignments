@@ -98,7 +98,14 @@ You can find quick links to the courses folders here.
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | MUH 401 | Kimya | C | 4 | 3 | 3+0+0 |
+| 1 | BIL 100 | Computer Orientation | C | 1 | 1 | 1+0+0 |
+| 1 | MUH 401 | Chemistry | C | 4 | 3 | 3+0+0 |
+| 3 | ING 111 | Foreign Language Reading and Speaking | C | 2 | 2 | 2+0+0 |
+| 4 | ING 112 | Professional Foreign Language I | C | 2 | 2 | 2+0+0 |
+| 5 | ING 310 | Mesleki Yabancı Dil I | C | 2 | 2 | 2+0+0 |
+| 6 | ING 320 | İş Hayatı İçin İngilizce | C | 2 | 2 | 2+0+0 |
+| 6 | MAT 214 | Numerical Analysis | C | 6 | 3 | 3+0+0 |
+| 6 | CSE 314 | Introduction to Databases | C | 6 | 3 | 3+0+0 |
 
 ## Thanks for Contributions
 
