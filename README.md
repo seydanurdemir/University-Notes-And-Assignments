@@ -39,11 +39,9 @@ You can find quick links to the courses folders here.
 | [3](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/) | [CSE 241](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/CSE-241/) | Object Oriented Programming | C | 2 | 1 | 0+0+2 |
 | [3](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/) | [CSE 231](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/CSE-231/) | Circuits And Electronics | C | 2 | 1 | 0+0+2 |
 | [3](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/) | [CSE 233](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/CSE-233/) | Circuits And Electronics Laboratory | C | 2 | 1 | 0+0+2 |
-| [3](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/) | [CSE 211](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/CSE-211/) | Discrete Mathematics | C | 2 | 1 | 0+0+2 |
 | [4](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/) | [CSE 222](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/CSE-222/) | Data Structures and Algorithms | C | 2 | 1 | 0+0+2 |
 | [4](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/) | [CSE 232](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/CSE-232/) | Logic Circuits And Design | C | 2 | 1 | 0+0+2 |
 | [4](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/) | [CSE 234](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/CSE-234/) | Logic Circuits And Design Laboratory | C | 2 | 1 | 0+0+2 |
-| [4](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/) | [MATH 217](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/MATH-217/) | Linearr Algebra and Differantial Equations | C | 2 | 1 | 0+0+2 |
 | [5](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/) | [CSE 321](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/CSE-321/) | Introduction To Algorithm Design | C | 2 | 1 | 0+0+2 |
 | [5](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/) | [CSE 331](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/CSE-331/) | Computer Organizations | C | 2 | 1 | 0+0+2 |
 | [5](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/) | [CSE 341](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester5/CSE-341/) | Programming Languages | C | 2 | 1 | 0+0+2 |
@@ -52,6 +50,13 @@ You can find quick links to the courses folders here.
 | [6](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/) | [CSE 344](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/CSE-344/) | System Programming | C | 2 | 1 | 0+0+2 |
 | [6](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/) | [CSE 351](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/CSE-351/) | Signals and Systems | C | 2 | 1 | 0+0+2 |
 | [6](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/) | [CSE 396](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/CSE-396/) | Computer Engineering Project | C | 2 | 1 | 0+0+2 |
+
+## More Department Courses
+
+| Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
+| --- | --- | --- | --- | --- | --- | --- |
+| [3](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/) | [CSE 211](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester3/CSE-211/) | Discrete Mathematics | C | 2 | 1 | 0+0+2 |
+| [4](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/) | [MATH 217](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/MATH-217/) | Linear Algebra and Differantial Equations | C | 2 | 1 | 0+0+2 |
 | [6](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/) | [MATH 118](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/MATH-118/) | Probability and Statistics | C | 2 | 1 | 0+0+2 |
 
 ## University Elective Courses
