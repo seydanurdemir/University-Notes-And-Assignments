@@ -1,5 +1,5 @@
-# CSE-107
-Introduction of Computer Science Laboratory
+# CSE-102
+Computer Programming
 
 ## Information Card
 | | |
@@ -8,12 +8,12 @@ Introduction of Computer Science Laboratory
 | **University** | Gebze Technical University |
 | **Faculty** | Faculty of Engineering |
 | **Department** | Department of Computer Engineering |
-| **Seasons & Years** | Fall 2013, Fall 2014 |
-| **Course Semester** | 1 / 8 |
-| **Course Code** | CSE 107 |
-| **Course Title** | Introduction of Computer Science Laboratory |
-| **Lecturer** | Prof. Hacı Ali MANTAR |
-| **Teaching Assistant** |  |
+| **Seasons & Years** | Spring 2014, Fall 2014, Spring 2015 |
+| **Course Semester** | 2 / 8 |
+| **Course Code** | CSE 102 |
+| **Course Title** | Computer Programming|
+| **Lecturer** | Doc. Fatih Erdoğan SEVİLGEN |
+| **Teaching Assistant** | Abdullah AKAY, Evren ÇİFÇİ |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
 | **Letter Grade** | BA |
