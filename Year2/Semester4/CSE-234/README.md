@@ -13,7 +13,7 @@ Logic Circuits And Design Laboratory
 | **Course Code** | CSE 232 |
 | **Course Title** | Logic Circuits And Design Laboratory |
 | **Lecturer** | Murat ŞEKER |
-| **Teaching Assistant** | Arzu KAKIŞIM, Egemen KALELİ, Ayşe ŞERBETÇİ TURAN, Fatmanur ESİRCİ, Samet GÜL, Abdullah Salih BAYRAKTAR |
+| **Teaching Assistant** | Arzu KAKIŞIM, Egemen KALELİ, Fatmanur ESİRCİ, Samet GÜL, Abdullah Salih BAYRAKTAR |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
 | **Letter Grade** | CC |
