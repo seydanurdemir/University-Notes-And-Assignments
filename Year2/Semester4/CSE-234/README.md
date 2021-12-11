@@ -1,5 +1,5 @@
-# CSE-232
-Logic Circuits And Design
+# CSE-234
+Logic Circuits And Design Laboratory
 
 ## Information Card
 | | |
@@ -11,7 +11,7 @@ Logic Circuits And Design
 | **Seasons & Years** | Spring 2016 |
 | **Course Semester** | 4 / 8 |
 | **Course Code** | CSE 232 |
-| **Course Title** | Logic Circuits And Design |
+| **Course Title** | Logic Circuits And Design Laboratory |
 | **Lecturer** | Murat ŞEKER |
 | **Teaching Assistant** | Arzu KAKIŞIM, Egemen KALELİ, Ayşe ŞERBETÇİ TURAN, Fatmanur ESİRCİ, Samet GÜL, Abdullah Salih BAYRAKTAR |
 | **Student Name** | Seyda Nur DEMIR |
