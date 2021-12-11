@@ -1,5 +1,5 @@
 # CSE-107
-Introduction of Computer Science Laboratory
+Introduction to Computer Science Laboratory
 
 ## Information Card
 | | |
@@ -11,9 +11,9 @@ Introduction of Computer Science Laboratory
 | **Seasons & Years** | Fall 2013, Fall 2014 |
 | **Course Semester** | 1 / 8 |
 | **Course Code** | CSE 107 |
-| **Course Title** | Introduction of Computer Science Laboratory |
+| **Course Title** | Introduction to Computer Science Laboratory |
 | **Lecturer** | Hacı Ali MANTAR |
-| **Teaching Assistant** |  |
+| **Teaching Assistant** | Tuğbagül ALTAN, Nurbanu ALBAYRAK |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
 | **Letter Grade** | BA |

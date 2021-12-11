@@ -8,7 +8,7 @@ Computer Programming Laboratory
 | **University** | Gebze Technical University |
 | **Faculty** | Faculty of Engineering |
 | **Department** | Department of Computer Engineering |
-| **Seasons & Years** | Spring 2014, Fall 2014, Spring 2015 |
+| **Seasons & Years** | Spring 2014, Spring 2015 |
 | **Course Semester** | 2 / 8 |
 | **Course Code** | CSE 108 |
 | **Course Title** | Computer Programming Laboratory |
@@ -16,4 +16,4 @@ Computer Programming Laboratory
 | **Teaching Assistant** | Nurbanu ALBAYRAK, Evren ÇİFÇİ, Abdullah AKAY |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
-| **Letter Grade** | BA |
+| **Letter Grade** | AA |
