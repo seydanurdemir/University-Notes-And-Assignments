@@ -12,7 +12,7 @@ Calculus II
 | **Course Semester** | 2 / 8 |
 | **Course Code** | MATH 102 |
 | **Course Title** | Calculus II |
-| **Lecturer** | Bengü ERGÜDEN |
+| **Lecturer** | Bengü SEZEN ERGÜDEN |
 | **Teaching Assistant** | None |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |

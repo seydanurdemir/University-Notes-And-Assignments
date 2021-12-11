@@ -12,7 +12,7 @@ Calculus I
 | **Course Semester** | 1 / 8 |
 | **Course Code** | MATH 101 |
 | **Course Title** | Calculus I |
-| **Lecturer** | Bengü ERGÜDEN |
+| **Lecturer** | Bengü SEZEN ERGÜDEN |
 | **Teaching Assistant** | None |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
