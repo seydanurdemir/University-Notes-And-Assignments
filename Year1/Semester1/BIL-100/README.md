@@ -9,7 +9,7 @@ Computer Orientation
 | **Faculty** | Faculty of Engineering |
 | **Department** | Department of Computer Engineering |
 | **Seasons & Years** | Fall 2013 |
-| **Course Semester** | 1 |
+| **Course Semester** | 1 / 8 |
 | **Course Code** | CSE 101 |
 | **Course Title** | Computer Orientation |
 | **Lecturer** | All Academicians |
