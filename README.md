@@ -98,12 +98,12 @@ You can find quick links to the courses folders here.
 
 | Semester | Course Code | Course Title | C/O | ECTS | GTU | H+T+L |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | MATH 101 | Calculus I | C | 7 | 5 | 5+0+0 |
-| 1 | PHYS 121 | Physics I | C | 6 | 4 | 3+0+0 |
-| 1 | PHYS 151 | Physics Laboratory I | C | 1 | 1 | 0+0+1 |
-| 2 | MATH 102 | Calculus II | C | 7 | 5 | 5+0+0 |
-| 2 | PHYS 122 | Physics II | C | 6 | 4 | 3+0+0 |
-| 2 | PHYS 152 | Physics Laboratory II | C | 1 | 1 | 0+0+1 |
+| [1](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester1/) | [MATH 101](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester1/MATH-101/) | Calculus I | C | 7 | 5 | 5+0+0 |
+| [1](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester1/) | [PHYS 121](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester1/PHYS-121/) | Physics I | C | 6 | 4 | 3+0+0 |
+| [1](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester1/) | [PHYS 151](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester1/PHYS-151/) | Physics Laboratory I | C | 1 | 1 | 0+0+1 |
+| [2](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester2/) | [MATH 102](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester2/MATH-102/) | Calculus II | C | 7 | 5 | 5+0+0 |
+| [2](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester2/) | [PHYS 122](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester2/PHYS-122/) | Physics II | C | 6 | 4 | 3+0+0 |
+| [2](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester2/) | [PHYS 152](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year1/Semester2/PHYS-152/) | Physics Laboratory II | C | 1 | 1 | 0+0+1 |
 
 ## YOK Common Compulsory Courses
 
