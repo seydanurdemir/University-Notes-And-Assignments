@@ -13,7 +13,7 @@ Circuits And Electronics
 | **Course Code** | CSE 231 |
 | **Course Title** | Circuits And Electronics |
 | **Lecturer** | Murat ŞEKER, Erkan ZERGEROĞLU |
-| **Teaching Assistant** | Arzu KAKIŞIM, Meltem ÇETİNER, Betül Zeliha TÜRKKOL ABUZARIFA |
+| **Teaching Assistant** | Nurmuhammed ÇİMEN, Arzu KAKIŞIM, Fatmanur ESİRCİ, Ahmet SOYYİĞİT, Ferda ABBASOĞLU, Samet GÜL, Mesih Veysi KILINÇ, Abdullah Salih BAYRAKTAR |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
 | **Letter Grade** | DD |

@@ -13,7 +13,7 @@ Logic Circuits And Design
 | **Course Code** | CSE 232 |
 | **Course Title** | Logic Circuits And Design |
 | **Lecturer** | Murat ŞEKER, Alp Arslan BAYRAKÇİ |
-| **Teaching Assistant** |  Arzu KAKIŞIM, Meltem ÇETİNER, Betül Zeliha TÜRKKOL ABUZARIFA, Abdullah Salih BAYRAKTAR |
+| **Teaching Assistant** |  Arzu KAKIŞIM, Egemen KALELİ, Ayşe ŞERBETÇİ TURAN, Fatmanur ESİRCİ, Samet GÜL, Abdullah Salih BAYRAKTAR |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
 | **Letter Grade** | BA |

@@ -13,7 +13,7 @@ Circuits And Electronics Laboratory
 | **Course Code** | CSE 233 |
 | **Course Title** | Circuits And Electronics Laboratory |
 | **Lecturer** | Murat ŞEKER |
-| **Teaching Assistant** | Mustafa Fatih TUNALI, Evren ÇİFCİ, Gökhan ÇELİK, Ahmet SOYYİĞİT |
+| **Teaching Assistant** | Mustafa Fatih TUNALI, Egemen KALELİ |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
 | **Letter Grade** | CB |
