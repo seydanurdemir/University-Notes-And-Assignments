@@ -1,4 +1,4 @@
-# CSE-100
+# CSE-100 (Removed)
 Computer Orientation
 
 ## Information Card

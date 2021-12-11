@@ -129,7 +129,7 @@ You can find quick links to the courses folders here.
 | [4](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/) | [MAT 214](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year2/Semester4/MAT-214/) | Numerical Analysis | C | 6 | 3 | 3+0+0 |
 | 5 | ING 310 | Professional Foreign Language II | C | 2 | 2 | 2+0+0 |
 | 6 | ING 320 | English for Business | C | 2 | 2 | 2+0+0 |
-| [6](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/) | [CSE 314](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/CSE-314/) | Introduction to Databases | C | 6 | 3 | 3+0+0 |
+| [6](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/) | [CSE 314](https://github.com/seydanurdemir/University-Notes-And-Assignments/tree/main/Year3/Semester6/CSE-314/) | Introduction to Database | C | 6 | 3 | 3+0+0 |
 
 ## Thanks for Contributions
 
