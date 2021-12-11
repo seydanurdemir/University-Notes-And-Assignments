@@ -13,7 +13,7 @@ Data Structures and Algorithms
 | **Course Code** | CSE 222 |
 | **Course Title** | Data Structures and Algorithms |
 | **Lecturer** | Erchan APTOULA, Fatih Erdoğan SEVİLGEN |
-| **Teaching Assistant** | Başak KARAKAŞ |
+| **Teaching Assistant** | Özgü GÖKSU, Ayşe ŞERBETÇİ TURAN, Ümit Murat AKKAYA, Nur Banu ALBAYRAK, Başak KARAKAŞ, Mehmet Burak KOCA |
 | **Student Name** | Seyda Nur DEMIR |
 | **Student ID** | 12 10 44 042 |
 | **Letter Grade** | CC |
