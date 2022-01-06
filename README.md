@@ -20,9 +20,9 @@ Here are some folder names and their meanings :
 - **Book :** Books offered by course lecturer
 - **Slides :** Slides shared by course lecturer
 - **PS :** Problem Solving sessions notes done by teaching assistants of lecture
-- **Working Notes :** My working notes or notes that some people shared with me and let me share with anyone
 - **Assignments :** Homeworks or projects done by me
 - **Exams :** Questions asked before in exams or old exams
+- **Working Notes :** My working notes or notes that some people shared with me and let me share with anyone
 
 ## All Courses List
 
