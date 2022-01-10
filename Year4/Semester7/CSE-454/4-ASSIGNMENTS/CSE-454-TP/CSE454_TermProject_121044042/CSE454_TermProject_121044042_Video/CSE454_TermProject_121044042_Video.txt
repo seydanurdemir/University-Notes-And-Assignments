@@ -1,0 +1,6 @@
+Ders Kodu ve Adi   : CSE 454 - Data Mining
+Assignment         : Term Project
+Ogrenci Adi Soyadi : Seyda Nur DEMIR
+Ogrenci No         : 121044042
+
+Drive Link         : https://drive.google.com/drive/folders/1wm9stpO2b8cCf-vEF0Y8_9iV8AEl_GM0?usp=sharing
