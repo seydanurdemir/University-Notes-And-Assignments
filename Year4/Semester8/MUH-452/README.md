@@ -1,4 +1,4 @@
-# MUH-453
+# MUH-452
 Teknolojik Girişimcilik
 
 ## Information Card
@@ -9,7 +9,7 @@ Teknolojik Girişimcilik
 | **Faculty** | Faculty of Engineering |
 | **Department** | Department of Computer Engineering |
 | **Seasons & Years** | Spring 2017 |
-| **Course Semester** | 8 / 8 |
+| **Course Semester** | 6 / 8 |
 | **Course Code** | MUH 452 |
 | **Course Title** | Teknolojik Girişimcilik |
 | **Lecturer** | Salih KÜKREK |
