@@ -1,0 +1,47 @@
+* SPICE3 file created from nor3_hw3.ext - technology: scmos
+
+M1000 a_18_16# B a_8_16# Vdd pfet w=0.48u l=0.24u
++  ad=0.4608p pd=2.88u as=0.4608p ps=2.88u
+M1001 GND B Z Gnd nfet w=0.48u l=0.24u
++  ad=0.8064p pd=5.28u as=0.8064p ps=5.28u
+M1002 Z C GND Gnd nfet w=0.48u l=0.24u
++  ad=0p pd=0u as=0p ps=0u
+M1003 Z A GND Gnd nfet w=0.48u l=0.24u
++  ad=0p pd=0u as=0p ps=0u
+M1004 a_8_16# A VDD Vdd pfet w=0.48u l=0.24u
++  ad=0p pd=0u as=0.3456p ps=2.4u
+M1005 Z C a_18_16# Vdd pfet w=0.48u l=0.24u
++  ad=0.3456p pd=2.4u as=0p ps=0u
+C0 B Z 0.02fF
+C1 GND Z 0.16fF
+C2 C Z 0.02fF
+C3 GND Gnd 0.18fF
+C4 Z Gnd 0.18fF
+C5 VDD Gnd 0.04fF
+C6 C Gnd 0.19fF
+C7 B Gnd 0.19fF
+C8 A Gnd 0.19fF
+
+*------------------------------------------------------
+
+VCC Vdd 0 DC=2.5
+
+VinA A 0 PWL(   0NS 0   50N 0  100N 0  150N 0  200N 2.5  250N 2.5  300N 2.5  350N 2.5
++ 400N 2.5) 
+VinB B 0 PWL(   0NS 0   50N 0  100N 2.5  150N 2.5  200N 0  250N 0  300N 2.5  350N 2.5
++ 400N 2.5)
+VinC C 0 PWL(   0NS 0   50N 2.5  100N 0  150N 2.5  200N 0  250N 2.5  300N 0  350N 2.5
++ 400N 2.5)
+
+.MODEL pfet pmos
+.MODEL nfet nmos
+
+.TRAN 1NSEC 750NSEC
+
+.OPTIONS TEMP=25 reltol = 1e-6 
+
+.include tsmc_cmos025
+
+.END
+
+*------------------------------------------------------

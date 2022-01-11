@@ -1,0 +1,12 @@
+* SPICE3 file created from inv_hw3.ext - technology: scmos
+
+M1000 Z A GND Gnd nfet w=0.48u l=0.24u
++  ad=0.3456p pd=2.4u as=0.3456p ps=2.4u
+M1001 Z A VDD Vdd pfet w=0.48u l=0.24u
++  ad=0.3456p pd=2.4u as=0.3456p ps=2.4u
+C0 GND Z 0.03fF
+C1 VDD Z 0.03fF
+C2 GND Gnd 0.04fF
+C3 Z Gnd 0.08fF
+C4 VDD Gnd 0.04fF
+C5 A Gnd 0.19fF

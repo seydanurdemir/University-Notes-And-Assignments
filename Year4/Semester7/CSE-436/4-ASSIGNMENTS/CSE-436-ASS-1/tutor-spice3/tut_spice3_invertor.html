@@ -1,0 +1,383 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <title>Helpme for 'U.C. Berkeley Spice 3f5'</title>
+</head>
+  <body bgcolor="#ffffff">
+        
+<p><a name="INDEX"></a></p>
+        
+<h1 align="center">UC Berkeley SPICE3 CMOS Inverter Tutorial</h1>
+        
+<p></p>
+     
+<hr>   
+<p></p>
+        
+<p>Index: </p>
+       
+<ol>
+    <li><a href="#INTRO">Introduction</a> </li>
+    <li><a href="#EDITING">Editing SPICE source code</a> </li>
+    <li><a href="#START">Starting and running SPICE3</a> </li>
+    <li><a href="#SAVE">Saving the result of an analysis</a> </li>
+    <li><a href="#LOAD">Using the results of a previous analysis</a> </li>
+    <li><a href="#PRINT">Printing plots</a> </li>
+      
+</ol>
+  <a name="INTRO"></a>   
+<p></p>
+        
+<h2 align="center">1. Introduction</h2>
+        
+<p>SPICE is a general-purpose circuit simulation program for non-linear dc, 
+ non-linear transient, linear ac, and other kinds of analyses. Circuits may 
+contain passive  components (resistors, capacitors, inductors), active devices 
+(transistors  and diodes), and independent voltage and current sources..., 
+etc. In this tutorial, we will illustrate the use of the simulator with a 
+CMOS inverter as shown in Fig.1 below.</p>
+        
+<p>In this figure, there are two transistors, and their gates are connected 
+ together at node #2.:</p>
+        
+<ul>
+             
+  <p>pch is the p-channel or PMOS transistor. Its terminals, drain, gate, 
+ source and bulk are connected to nodes #3, #2, #1, #1 respectively.</p>
+              
+  <p>nch is the n-channel or NMOS transistor. Its terminals, drain, gate, 
+ source and bulk are connected to nodes #3, #2, #0, #0 respectively.</p>
+       
+</ul>
+        
+<p>Node #0 is the ground node, Node #1 is connected to the supply voltage,
+  VCC, Node #2 is connected to the input, in, and node #3, the output, is 
+connected to a load capacitor of 0.1P farads. This load represents the  input 
+capacitance of any other gate that is driven by the inverter and the  value 
+is arbitrarily chosen.</p>
+        
+<h4 align="center"><img src="tut_spice3_invertor1.gif" hspace="3">
+   </h4>
+        
+<center></center>
+ <a name="EDITING"></a>   
+<p></p>
+        
+<h2 align="center">2. Editing SPICE source code</h2>
+ See the circuit description in &nbsp;<a href="tut_spice3_invertor.cir">tut_spice3_invertor.cir</a><br>
+ <br>
+      Any text editor can be used to edit SPICE source code.     
+<p><b>Title Line #1:</b> The first line of SPICE source code is the title 
+ line and will be ignored by the Spice parser. You may leave it blank , but 
+it  is preferable that you use it to identify your circuit.</p>
+        
+<p><b>Column 1 is blank or is *: </b> The asterisk in the first column indicates 
+ that this line is a comment line. Comment lines may be placed anywhere in 
+ the circuit description. <i>Note that SPICE3 also considers any line with 
+ leading white space to be a comment line.</i>  </p>
+     
+<p><font color="BLUE"><code><b>M1     3     2    1      1         PMOS   W=3U
+ L=0.25U    </b></code></font> <br>
+   <b>M1 </b>is the Mname given to the PMOS transitor shown above. This is 
+followed by the node numbers of the drain, gate, source and substrate  of 
+the transistor in this specific order. <br>
+   (Note that nodes names can be alpha-numeric, not just numeric.) Thus node
+  #3 refers to the drain, node #2 is the gate and node #1 connects the source
+  and the substrate to the supply voltage VCC.&nbsp; "PMOS" indicates the 
+model to be used for the p-channel transistor M1. The PMOS model is defined 
+later in the file. &nbsp;W and L are channel width and channel length.  </p>
+     
+<p><font color="BLUE"><code><b>M2     3     2    0      0         NMOS W=1U 
+  L=0.25U    </b></code></font> <br>
+   <b>M2: </b>In a similar fashion, the drain, gate, source and substrate 
+of the nch,  M2, are connected respectively to #3, #2, #0 and #0.<br>
+ &nbsp;NMOS refers to the model of this transistor, defined later. The other 
+entries specify the width  and length of the channel.  </p>
+     
+<p><font color="BLUE"><code><b>C3    3    0    0.1p     </b></code></font>
+  <br>
+   <b>C3: </b>specifies the load capacitance, C3, as a 0.1 picofarad capacitor 
+ with positive terminal connected to node 3 and negative terminal to the ground
+ node 0.   </p>
+     
+<ul>
+    <li>Capacitor Syntax: <b>Cxxxxxxx +Node -Node value [IC=init_cond]</b></li>
+     <li><b>IC=</b> for specifying an initial condition on the capacitor
+(in  volts) and the bracketed text is optional.</li>
+      <li><b>Nodes</b> can have alpha-numeric names, not just numbers. The
+ only restriction is that the reference node (i.e. ground) must be labeled
+ as node "0" (zero).</li>
+      <li><b>Specifying component values:</b> there are several different 
+ways  to express component values in Spice. For example 100 Megaohms can be
+entered  as 100MEG, 100E6, or 100E+3. Also note that Spice ignores any extra
+characters  you type so 100MEG is the same as 100MEGOHMS.  The symbols supported
+by Spice  include:                
+    <p> </p>
+                 
+    <center>                
+    <table border="1">
+    <tbody>
+           <tr>
+             <th> Spice symbol </th>
+    <th> Value in Scientific Notation </th>
+    </tr>
+           <tr>
+             <td> T </td>
+             <td> 1E12 </td>
+           </tr>
+    <tr>
+             <td> G </td>
+             <td> 1E9 </td>
+           </tr>
+    <tr>
+             <td>MEG</td>
+             <td> 1E6&nbsp;</td>
+           </tr>
+    <tr>
+             <td> K </td>
+             <td> 1E3 </td>
+           </tr>
+    <tr>
+             <td> M </td>
+             <td> 1E-3 </td>
+           </tr>
+    <tr>
+             <td> U </td>
+             <td> 1E-6 </td>
+           </tr>
+    <tr>
+             <td> N </td>
+             <td> 1E-9 </td>
+           </tr>
+    <tr>
+             <td> P </td>
+             <td> 1E-12 </td>
+           </tr>
+    <tr>
+             <td> F </td>
+             <td> 1E-15 </td>
+           </tr>
+                         
+      </tbody>               
+    </table>
+    </center>
+    </li>
+     
+</ul>
+        
+<p><b>VCC 1 0 DC=2.5:<br>
+ </b>This line defines an independent voltage source.  This line tells us 
+that a DC source of 2.5V is applied across node #1 and  ground. <br>
+   </p>
+     
+<p>Another voltage source VIN is applied at the gates of the transistors, 
+node #2.&nbsp;<br>
+ </p>
+ 
+<p>The .DC and .TRAN lines in the SPICE source code are for the DC transfer 
+curve and transient analysis.</p>
+ 
+<p>One can use the .OPTION statement to set various simulator options.<br>
+   </p>
+     
+<p><b>.include</b> includes another file. <br>
+   </p>
+        
+<p><b>.MODEL</b> defines the transistor models, PMOS and NMOS. This example 
+ uses SPICE level 8, the BSIM3 model.&nbsp;<br>
+   </p>
+        
+<p>The MOS model descriptions are in &nbsp;<a href="tsmc_cmos025">tsmc_cmos025</a><br>
+   </p>
+        
+<pre><br></pre>
+ 
+<hr><a name="START"></a>     
+<h2 align="center">3. Starting and running SPICE3</h2>
+ 
+<p>Copy&nbsp; <a href="tut_spice3_invertor.cir">tut_spice3_invertor.cir</a> 
+ &nbsp;and &nbsp;<a href="tsmc_cmos025">tsmc_cmos025</a> &nbsp;into your
+own directory. &nbsp;<br>
+ </p>
+ 
+<p>To start SPICE3, type:  </p>
+         
+<p><tt><b>spice3</b></tt>  </p>
+     
+<p>at the Unix prompt.</p>
+ 
+<p>On the screen you will see:  </p>
+     
+<p><tt>Spice 1 -&gt; </tt>  </p>
+     
+<p>which indicates that you are inside the SPICE interactive environment.</p>
+       
+<p>In order to load your design, type  </p>
+     
+<p><tt>Spice 1 -&gt; <b>source&nbsp;</b></tt><small><b> tut_spice3_invertor.cir</b></small>
+   </p>
+     
+<p>To to see the SPICE source code you have loaded, type the following: </p>
+        
+<p><tt>Spice 2 -&gt; <b>listing </b></tt>  </p>
+     
+<p>To simulate the circuit described in the SPICE source code, type:  </p>
+     
+<p><tt>Spice 3 -&gt; <b>run </b></tt>   </p>
+     
+<p>SPICE stores the results of each analysis it performs in a data structure
+  called a "plot" <br>
+   (analogous to a table of results). Each 'plot' contains a set of 'vectors' 
+ (analogous to a column of data) <br>
+   which contain the numerical results. The interactive interpreter provides 
+ a set of functions  that operate on vectors. <br>
+   the word "plot" refers to a group of  vectors that are the result of one 
+ Spice analysis run.  <br>
+   Use the command "setplot" to choose the DC analysis results.<br>
+   </p>
+     
+<p><tt>Spice 3 -&gt; <b>setplot<br>
+   </b></tt></p>
+     
+<p>Choose <b>dc1</b>. Now, use the command <b>display</b> to see the vectors
+ generated as the result of the DC analysis.<br>
+   </p>
+     
+<p>For the DC transfer curve plot for node 3 versus node 2, type: </p>
+       
+<p><tt>Spice 4 -&gt; <b>plot v(3) vs v(2)</b></tt>  </p>
+     
+<p>will get the graph as shown below  </p>
+     
+<h4 align="center"><img src="tut_spice3_invertor2.gif" hspace="3" alt=""
+ width="643" height="453">
+  </h4>
+  <br>
+       
+<center></center>
+   
+<p>For supply current vs. input voltage plot, type:  </p>
+     
+<p><tt>Spice 5 -&gt; <b>plot i(VCC) vs v(2)</b></tt>  </p>
+     
+<p>you will get the graph shown below</p>
+        
+<h4 align="center"><img src="tut_spice3_invertor2a.gif" hspace="3"
+ alt="a" width="999" height="713">
+  </h4>
+  <br>
+       
+<center></center>
+        
+<p>To see the results of the transient analysis, use the setplot command
+again and choose<b> tran1</b> this time.</p>
+   
+<p>For transient analysis, in this example, we use a PWL voltage source input,
+ where PWL&nbsp; stands for piecewise linear signal where each pair (Ti,
+Vi)  specifies that the value of the source is Vi (in Volts) at time=Ti.
+The value  of the source at intermediate values of time is determined by
+using linear  interpolation on the input values.  </p>
+      
+<p><tt>Spice 8 -&gt; <b>plot v(3)</b></tt>  </p>
+     
+<p>will plot the output of the  CMOS inverter (i.e. node 3 voltage) on the 
+screen as shown below.<br>
+  </p>
+   
+<p><br>
+  </p>
+         
+<h4 align="center"><img src="tut_spice3_invertor4.gif" alt="s"
+ width="934" height="656">
+  </h4>
+  <br>
+       
+<center></center>
+         
+<p><tt>Spice 9 -&gt; <b>plot v(3) &nbsp;v(2)</b></tt>  </p>
+     
+<p>will plot the Voltage versus Time diagram of the CMOS inverter output (i.e.
+node 3) and the CMOS inverter input Vin (i.e. node 2) on the same graph window
+as shown below.</p>
+         
+<h4 align="center"><img src="tut_spice3_invertor4a.gif" hspace="3"
+ alt="a" width="854" height="621">
+  </h4>
+  <br>
+       
+<center></center>
+         
+<p>  </p>
+     
+<p> </p>
+     
+<hr><a name="SAVE"></a>   
+<p></p>
+        
+<h2 align="center">4. Saving the results of an analysis</h2>
+     Once you have performed an analysis, you may want to save all or some 
+ of the results to a file, so that you can print or plot them later.  
+<p>One can see the contents of the current directory using the "shell" command:
+   </p>
+     
+<p><tt>Spice 12 -&gt; <b>shell ls</b></tt>  </p>
+     
+<p> For example, if you want to save the transient analysis result for node 
+3 to a &nbsp;file named <b>tranresults</b>, type:</p>
+        
+<p><tt>Spice 13 -&gt; <b>write tranresults v(3)</b></tt><br>
+ </p>
+ <br>
+ 
+<hr><br>
+ <a name="LOAD"></a>   
+<p></p>
+        
+<h2 align="center">5. Using the results of a previous analysis</h2>
+     To see the results of a previous analysis that was saved, all you have
+ to do is to load the file which contains the results:      
+<h4 align="center"><b>load <i>filename</i></b></h4>
+        
+<p>For example, if you want to load the results saved in the file <b>tranresults</b>,
+  type:</p>
+        
+<p> </p>
+        
+<h4 align="center"><b>load tranresults</b></h4>
+        
+<p>the result will be loaded. You may use plot v(3) to see the graph.   
+</p>
+     
+<hr><a name="PRINT"></a>     
+<h2 align="center">6. Printing plots</h2>
+  The command "hardcopy" works just like the plot command, but the plot does
+ not pop up as a window, but it is put in a file in the PostScript (PS) format.<br>
+ Alternatively, one can use the "hardcopy" button on the plot window to obtain 
+a PS file for the plot. <br>
+   
+<p><tt>Spice 18 -&gt; <b>hardcopy v3.ps v(3)</b></tt>  </p>
+     
+<p>creates the PostScript file v3.ps. &nbsp;The unix shell command "ps2pdf"
+ will convert this file to the PDF format, which can be subsequently printed.
+ <br>
+  </p>
+   
+<p><tt>Spice 19 -&gt; <b>shell ps2pdf v3.ps v3.pdf</b></tt>  </p>
+        
+<h4 align="center"><b><i></i></b></h4>
+        
+<p> </p>
+     
+<hr>Acknowledgements: <br>
+  Tien-Cheng Bau, and Samiha Mourad of the <a
+ href="http://www.scudc.scu.edu/mentortu/ucb_spice3.html"> Electrical Engineering 
+ Department</a> <br>
+  Revised by Francis G. Wolff at CWRU EECS department  Date of last revision:
+ 07/21/2000  <br>
+  <br>
+  Revised by Alper Demir: 2-19-2003.<br>
+   <br>
+  <br>
+ <br>
+</body>
+</html>

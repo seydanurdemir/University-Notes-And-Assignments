@@ -1,0 +1,23 @@
+*------------------------------------------------------
+
+VCC Vdd 0 DC=2.5
+
+VinA A 0 PWL(   0NS 0   50N 0  100N 0  150N 0  200N 5  250N 5  300N 5  350N 5
++ 400N 5) 
+VinB B 0 PWL(   0NS 0   50N 0  100N 5  150N 5  200N 0  250N 0  300N 5  350N 5
++ 400N 5)
+VinC C 0 PWL(   0NS 0   50N 5  100N 0  150N 5  200N 0  250N 5  300N 0  350N 5
++ 400N 5)
+
+.MODEL pfet pmos
+.MODEL nfet nmos
+
+.TRAN 1NSEC 750NSEC
+
+.OPTIONS TEMP=25 reltol = 1e-6 
+
+.include tsmc_cmos025
+
+.END
+
+*------------------------------------------------------

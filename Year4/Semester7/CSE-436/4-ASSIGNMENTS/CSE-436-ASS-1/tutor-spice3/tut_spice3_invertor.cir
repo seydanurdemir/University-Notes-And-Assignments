@@ -1,0 +1,51 @@
+* CMOS Inverter 
+
+*
+*TRANSISTOR
+*Mname DRAIN GATE SOURCE SUBSTRATE MODEL WIDTH   LENGTH
+*      NODE  NODE NODE   NODE      NAME  MICRONS MICRONS
+*----- ----- ---- ------ --------- ----  ------- ------
+M1     3     2    1      1         PMOS   W=3U  L=0.25U
+
+M2     3     2    0      0         NMOS   W=1U  L=0.25U
+
+*
+*CAPACITOR
+*Cname +NODE -NODE VALUE(Picofarads)
+*----- ----- ----- -----------------
+C3     3     0     0.1P
+
+*
+* INDEPENDANT VOLTAGE SOURCE
+*
+*Vname +NODE -NODE VALUE
+*----- ----- ----- -----
+VCC    1     0     DC=2.5
+
+
+* The following two lines are for TRANSIENT analysis
+*
+*Vname +Node -Node Option T1  V1   T2  V2   T3   V3    T4  V4  T5   V5 
+*----- ----- ----- ------ --  --   --  --   ---- --    --  --  ---- -- 
+Vin     2     0    PWL(   0   0    4N  0    4.1N 2.5   8N  2.5 8.1N  0  ) 
+
+
+*     TSTEP TSTOP
+*     ----- -----
+.TRAN 0.1N  12N
+
+
+* The following line is for DC analysis
+
+.DC VIN 0 2.6 0.1
+
+
+* TEMPERATURE and OPTIONS SETTING
+
+.OPTIONS TEMP=25 reltol = 1e-6 
+
+*MODELS
+
+.include tsmc_cmos025
+
+.END

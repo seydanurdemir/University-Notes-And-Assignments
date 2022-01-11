@@ -1,0 +1,61 @@
+magic
+tech scmos
+timestamp 1604663184
+<< nwell >>
+rect -32 -23 -4 -1
+<< ntransistor >>
+rect -24 -40 -22 -36
+rect -14 -40 -12 -36
+<< ptransistor >>
+rect -24 -17 -22 -9
+rect -14 -17 -12 -9
+<< ndiffusion >>
+rect -26 -40 -24 -36
+rect -22 -40 -14 -36
+rect -12 -40 -10 -36
+<< pdiffusion >>
+rect -26 -17 -24 -9
+rect -22 -17 -20 -9
+rect -16 -17 -14 -9
+rect -12 -17 -10 -9
+<< ndcontact >>
+rect -30 -40 -26 -36
+rect -10 -40 -6 -36
+rect -30 -51 -26 -47
+<< pdcontact >>
+rect -30 -3 -26 1
+rect -30 -17 -26 -9
+rect -20 -17 -16 -9
+rect -10 -17 -6 -9
+<< polysilicon >>
+rect -24 -9 -22 -6
+rect -14 -9 -12 -6
+rect -24 -36 -22 -17
+rect -14 -36 -12 -17
+rect -24 -43 -22 -40
+rect -14 -43 -12 -40
+<< polycontact >>
+rect -28 -32 -24 -28
+rect -18 -32 -14 -28
+<< metal1 >>
+rect -32 1 -4 2
+rect -32 -3 -30 1
+rect -26 -3 -4 1
+rect -32 -4 -4 -3
+rect -30 -9 -26 -4
+rect -10 -9 -6 -4
+rect -20 -21 -16 -17
+rect -20 -25 -6 -21
+rect -10 -36 -6 -25
+rect -30 -46 -26 -40
+rect -32 -47 -4 -46
+rect -32 -51 -30 -47
+rect -26 -51 -4 -47
+rect -32 -52 -4 -51
+<< labels >>
+rlabel metal1 -18 -49 -18 -49 1 GND
+rlabel polycontact -26 -30 -26 -30 1 VinA
+rlabel polycontact -16 -30 -16 -30 1 VinB
+rlabel metal1 -18 1 -18 1 5 VDD
+rlabel metal1 -7 -29 -7 -29 1 Vout
+<< end >>

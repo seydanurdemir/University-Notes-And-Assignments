@@ -1,0 +1,33 @@
+magic -T SCN5M_DEP.12...
+extract do all
+extract all
+ext2spice cthresh 0.001
+ext2spice rthresh 1
+ext2spice merge none
+ext2spice extresist off
+ext2spice scale off
+ext2spice
+exttospice
+
+ngspice
+source xx.spice
+run
+plot v(A) v(B) v(Z)
+
+grid on
+label x
+erase
+nwell
+pdiff
+ndiff
+poly
+red
+metal
+pdc
+ndc
+polycontact
+paint red
+paint m1
+
+drc why
+drc

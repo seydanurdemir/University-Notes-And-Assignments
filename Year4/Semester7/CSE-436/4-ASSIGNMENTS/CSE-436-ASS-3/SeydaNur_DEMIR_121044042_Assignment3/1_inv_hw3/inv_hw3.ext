@@ -1,0 +1,14 @@
+timestamp 1606508019
+version 8.3
+tech scmos
+style TSMC0.25um(tsmc25)from:t11y
+scale 1000 1 12
+resistclasses 4600 3500 1067000 1067000 1 4000 4000 80 80 80 80 40
+node "GND" 7 36.32 0 0 ndc 24 20 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0 0 0 0 0 0 0
+node "Z" 13 82.24 8 0 ndif 24 20 24 20 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0 0 0 0 0
+node "VDD" 5 36.32 0 16 pdc 0 0 24 20 0 0 0 0 0 0 0 0 0 0 32 24 0 0 0 0 0 0 0 0
+node "A" 52 185.88 6 -3 p 0 0 0 0 0 0 0 0 0 0 52 56 0 0 0 0 0 0 0 0 0 0 0 0
+cap "GND" "Z" 27.492
+cap "VDD" "Z" 27.492
+fet nfet 6 0 7 1 8 12 "Gnd!" "A" 4 0 "GND" 4 0 "Z" 4 0
+fet pfet 6 16 7 17 8 12 "Vdd!" "A" 4 0 "VDD" 4 0 "Z" 4 0

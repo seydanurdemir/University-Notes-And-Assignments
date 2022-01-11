@@ -1,0 +1,37 @@
+* SPICE3 file created from nor2_hw3.ext - technology: scmos
+
+M1000 Z B a_8_16# Vdd pfet w=0.48u l=0.24u
++  ad=0.3456p pd=2.4u as=0.4608p ps=2.88u
+M1001 GND B Z Gnd nfet w=0.48u l=0.24u
++  ad=0.6912p pd=4.8u as=0.4608p ps=2.88u
+M1002 Z A GND Gnd nfet w=0.48u l=0.24u
++  ad=0p pd=0u as=0p ps=0u
+M1003 a_8_16# A VDD Vdd pfet w=0.48u l=0.24u
++  ad=0p pd=0u as=0.3456p ps=2.4u
+C0 Z B 0.02fF
+C1 GND Z 0.14fF
+C2 GND Gnd 0.18fF
+C3 Z Gnd 0.12fF
+C4 VDD Gnd 0.04fF
+C5 B Gnd 0.19fF
+C6 A Gnd 0.19fF
+
+*------------------------------------------------------
+
+VCC Vdd 0 DC=2.5
+
+VinA A 0 PWL(0NS 0   50N 0  100N 0  150N 2.5  200N 2.5  250N 2.5) 
+VinB B 0 PWL(0NS 0   50N 0  100N 2.5  150N 0  200N 2.5  250N 2.5)
+
+.MODEL pfet pmos
+.MODEL nfet nmos
+
+.TRAN 1NSEC 750NSEC
+
+.OPTIONS TEMP=25 reltol = 1e-6 
+
+.include tsmc_cmos025
+
+.END
+
+*------------------------------------------------------
