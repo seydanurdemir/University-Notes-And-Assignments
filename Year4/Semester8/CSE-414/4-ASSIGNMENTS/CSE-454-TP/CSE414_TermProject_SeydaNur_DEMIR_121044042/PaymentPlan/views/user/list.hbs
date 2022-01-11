@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <a href="/user/add" class="list-group-item list-group-item-action active">+ Yeni Kullanıcı Ekle</a>
+    {{#each users}}
+        <a class="list-group-item list-group-item-action" href="/user/edit/{{this.id}}">
+            Kullanıcı Adı: <b>{{this.username}}</b><br>
+            Kullanıcı Tipi: <b>{{#userType this.user_type_id}}{{/userType}}</b><br>
+        </a>
+    {{/each}}
+</ul>

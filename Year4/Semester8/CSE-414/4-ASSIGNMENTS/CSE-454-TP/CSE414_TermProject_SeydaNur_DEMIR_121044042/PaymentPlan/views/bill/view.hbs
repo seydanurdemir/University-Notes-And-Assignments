@@ -1,0 +1,36 @@
+<form>
+    <div class="form-group">
+        <label for="subscription_id">Abonelik</label>
+        <select disabled class="form-control" name="subscription_id" id="subscription_id">
+            {{#each subscriptions}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../bill.subscription_id this.id}} selected {{/ifeq}}>
+                    {{this.subscription_number}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="amount">Tutar</label>
+        <input value="{{bill.amount}}" disabled type="number" min="0.00" max="10000.00" step="0.01" class="form-control" id="amount" name="amount">
+    </div>
+    <div class="form-group">
+        <label for="first_read_date">İlk Okuma Tarihi</label>
+        <input value="{{#formatDate bill.first_read_date}}{{/formatDate}}" disabled autocomplete="off" type="date" class="form-control" id="first_read_date" name="first_read_date">
+    </div>
+    <div class="form-group">
+        <label for="last_read_date">Son Okuma Tarihi</label>
+        <input value="{{#formatDate bill.last_read_date}}{{/formatDate}}" disabled autocomplete="off" type="date" class="form-control" id="last_read_date" name="last_read_date">
+    </div>
+    <div class="form-group">
+        <label for="start_date">İlk Ödeme Tarihi</label>
+        <input value="{{#formatDate bill.start_date}}{{/formatDate}}" disabled required autocomplete="off" type="date" class="form-control" id="start_date" name="start_date">
+    </div>
+    <div class="form-group">
+        <label for="due_date">Son Ödeme Tarihi</label>
+        <input value="{{#formatDate bill.due_date}}{{/formatDate}}" disabled autocomplete="off" type="date" class="form-control" id="due_date" name="due_date">
+    </div>
+
+    <a href="/payment/create/{{bill.id}}" class="btn btn-primary mt-3 mb-3 {{#ifCond bill.payment_id '>' 0}} disabled {{/ifCond}} {{#ifCond auth_type '!=' 'SUB'}} disabled {{/ifCond}}">Öde</a>
+    <a href="/promise/add/{{bill.id}}" class="btn btn-primary mt-3 mb-3 {{#ifCond bill.promise_id  '>' 0}} disabled {{/ifCond}} {{#ifCond auth_type '!=' 'SUB'}} disabled {{/ifCond}}">Ertele</a>
+</form>

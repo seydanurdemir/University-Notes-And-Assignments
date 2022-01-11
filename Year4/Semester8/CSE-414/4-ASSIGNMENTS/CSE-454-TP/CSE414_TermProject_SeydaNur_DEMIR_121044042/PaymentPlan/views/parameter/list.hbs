@@ -1,0 +1,11 @@
+<ul class="list-group">
+    <a href="/parameter/add" class="list-group-item list-group-item-action active">+ Yeni Parametre Ekle</a>
+    {{#each parameters}}
+        <a class="list-group-item list-group-item-action" href="/parameter/edit/{{this.id}}">
+            Kod: <b>{{this.code}}</b><br>
+            Değer: <b>{{this.value}}</b><br>
+            Açıklama: <b>{{this.description}}</b><br>
+            Aktif: <b>{{this.is_valid}}</b><br>
+        </a>
+    {{/each}}
+</ul>

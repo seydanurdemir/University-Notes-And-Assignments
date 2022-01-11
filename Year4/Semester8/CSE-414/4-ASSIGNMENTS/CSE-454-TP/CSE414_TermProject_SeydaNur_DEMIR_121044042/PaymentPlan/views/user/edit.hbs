@@ -1,0 +1,47 @@
+<form method="post" action="/user/edit">
+    <input type="hidden" name="id" value="{{user.id}}">
+    <div class="form-group">
+        <label for="username">Kullanıcı Adı</label>
+        <input value="{{user.username}}" disabled autocomplete="off" type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="form-group">
+        <label for="password">Şifre</label>
+        <input required autocomplete="off" type="password" class="form-control" id="password" name="password">
+    </div>
+    <div class="form-group">
+        <label for="email">E-posta</label>
+        <input value="{{user.email}}" required autocomplete="off" type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="user_type_id">Kullanıcı Tipi</label>
+        <select class="form-control" name="user_type_id" id="user_type_id">
+            {{#each userTypes}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../user.user_type_id this.id}} selected {{/ifeq}}>
+                    {{this.description}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefon</label>
+        <input value="{{user.phone}}" autocomplete="off" type="tel" class="form-control" id="phone" name="phone" placeholder="5xx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </div>
+    <div class="form-group">
+        <label for="address">Adres</label>
+        <input value="{{user.address}}" autocomplete="off" type="text" class="form-control" id="address" name="address" maxlength="255">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+{{!-- <h5 class="card-header mb-2">Etkinlikler</h5>
+<ul class="list-group">
+    <a href="/event/add/{{eventGroup.id}}" class="list-group-item list-group-item-action active">+ Yeni Etkinlik Ekle</a>
+    {{#each events}}
+        <a class="list-group-item list-group-item-action" href="/event/edit/{{this.id}}">
+            <b>{{../eventGroup.event_name}}</b><br>
+            Mekan: {{this.place_name}}<br>
+            Tarih: {{this.start_date}}<br>
+        </a>
+    {{/each}}
+</ul> --}}

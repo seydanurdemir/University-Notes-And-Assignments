@@ -1,0 +1,17 @@
+<ul class="list-group">
+    {{#each payments}}
+        <a class="list-group-item list-group-item-action" class="disabled">
+            {{#ifCond ../auth_type '!=' 'PRO'}}
+                Hizmet Sağlayıcı: <b>{{this.corporate_name}}</b><br>
+            {{/ifCond}}
+            Abone No: <b>{{this.subscription_number}}</b><br>
+            Fatura No: <b>{{this.bill_number}}</b><br>
+            Fatura Tarihi: <b>{{this.start_date}}</b><br>
+            Son Ödeme Tarihi: <b>{{#formatDate this.due_date}}{{/formatDate}}</b><br>
+            Tutar: <b>{{this.bill_amount}} ₺</b><br>
+            <hr>
+            Transfer No: <b>{{this.seq_num}}</b><br>
+            Ödeme Tarihi: <b>{{this.payment_date}}</b><br>
+        </a>
+    {{/each}}
+</ul>

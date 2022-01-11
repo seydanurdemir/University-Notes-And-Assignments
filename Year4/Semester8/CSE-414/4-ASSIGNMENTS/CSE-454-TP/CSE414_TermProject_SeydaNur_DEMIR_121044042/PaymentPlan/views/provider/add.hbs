@@ -1,0 +1,28 @@
+<form method="post" action="/provider/add">
+    <div class="form-group">
+        <label for="service_type_id">Servis Tipi</label>
+        <select required class="form-control" name="service_type_id" id="service_type_id">
+            {{#each serviceTypes}}
+                <option value="{{this.id}}">
+                    {{this.description}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="username">Şirket Adı</label>
+        <input required autocomplete="off" type="text" class="form-control" id="corporate_name" name="corporate_name">
+    </div>
+    <div class="form-group">
+        <label for="user_id">Kullanıcı</label>
+        <select class="form-control" name="user_id" id="user_id">
+            {{#each users}}
+                <option value="{{this.id}}">
+                    {{this.username}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>

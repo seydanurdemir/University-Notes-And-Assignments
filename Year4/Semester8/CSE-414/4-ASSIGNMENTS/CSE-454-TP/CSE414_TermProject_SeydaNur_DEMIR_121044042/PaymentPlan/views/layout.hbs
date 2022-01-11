@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="max-age=604800"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{title}}</title>
+    <meta name="keywords" content="bilet yönetim sistemi"/>
+    <meta name="description" content="bilet yönetim sistemi"/>
+    <meta name="theme-color" content="#00b517"/>
+    <script src="/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/ui.css?v=2" rel="stylesheet" type="text/css"/>
+    <link href="/css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)"/>
+    <link href="/css/style.css?v=4" rel="stylesheet" media="only screen and (max-width: 1200px)"/>
+    <link href="/css/select2-bootstrap4-theme.css" rel="stylesheet"/>
+    <script src="/js/script.js?v=21" type="text/javascript"></script>
+    <script src="/js/sweetalert2.js?v=2"></script>
+    <script src="/js/sweetalert2.js?v=2"></script>
+    <link href="/css/select2.min.css" rel="stylesheet"/>
+    <script src="/js/select2.min.js"></script>
+    {{#if basename}}
+        <script src="/js/pages/{{basename}}.js?v=26" type="text/javascript"></script>
+    {{/if}}
+</head>
+<body>
+<header class="section-header ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Payment Plan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    {{#ifeq auth_type 'ADM'}}
+                        <a class="nav-item nav-link" href="/branch/list">Şubeler</a>
+                        <a class="nav-item nav-link" href="/employee/list">Çalışanlar</a>
+                        <a class="nav-item nav-link" href="/provider/list">Hizmet Sağlayıcıları</a>
+                        <a class="nav-item nav-link" href="/subscription/list">Abonelikler</a>
+                        <a class="nav-item nav-link" href="/bill/list">Faturalar</a>
+                        <a class="nav-item nav-link" href="/promise/list">Ödeme Sözleri</a>
+                        <a class="nav-item nav-link" href="/payment/list">Ödemeler</a>
+                        <a class="nav-item nav-link" href="/transaction/list">Transferler</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sistem
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/notification/list">Bildirimler</a></li>
+                                <li><a class="dropdown-item" href="/user/list">Kullanıcılar</a></li>
+                                <li><a class="dropdown-item" href="/parameter/list">Parametreler</a></li>
+                                {{!-- <li><a class="dropdown-item" href="/log/list">Sistem Günlüğü</a></li> --}}
+                            </ul>
+                        </li>
+                    {{/ifeq}}
+                    {{#ifeq auth_type 'SUB'}}
+                        <a class="nav-item nav-link" href="/subscription/my-list">Aboneliklerim</a>
+                        <a class="nav-item nav-link" href="/bill/my-list">Faturalarım</a>
+                        <a class="nav-item nav-link" href="/promise/my-list">Ödeme Sözlerim</a>
+                        <a class="nav-item nav-link" href="/payment/my-list">Ödemelerim</a>
+                        <a class="nav-item nav-link" href="/wallet/my">Cüzdanım</a>
+                        <a class="nav-item nav-link" href="/card/my-list">Kartlarım</a>
+                        <a class="nav-item nav-link" href="/notification/list">Bildirimler</a>
+                    {{/ifeq}}
+                    {{#ifeq auth_type 'EMP'}}
+                        <a class="nav-item nav-link" href="/provider/list">Hizmet Sağlayıcıları</a>
+                        <a class="nav-item nav-link" href="/bill/list">Faturalar</a>
+                        <a class="nav-item nav-link" href="/notification/list">Bildirimler</a>
+                    {{/ifeq}}
+                    {{#ifeq auth_type 'PRO'}}
+                        <a class="nav-item nav-link" href="/subscription/my-list">Abonelikler</a>
+                        <a class="nav-item nav-link" href="/bill/my-list">Faturalar</a>
+                        <a class="nav-item nav-link" href="/promise/my-list">Ödeme Sözleri</a>
+                        <a class="nav-item nav-link" href="/payment/my-list">Ödemeler</a>
+                        <a class="nav-item nav-link" href="/wallet/my">Cüzdanım</a>
+                        <a class="nav-item nav-link" href="/notification/list">Bildirimler</a>
+                    {{/ifeq}}
+                </div>
+            </div>
+            <ul class="navbar-nav">
+                {{#if is_logged}}
+                    <li class="nav-item"><a href="/user/logout" class="nav-link"> Çıkış Yap </a></li>
+                {{else}}
+                    <li class="nav-item"><a href="/user/login" class="nav-link"> Giriş Yap </a></li>
+                {{/if}}
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="section-content padding-y-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <h5 class="card-header">{{{title}}}</h5>
+                    <div class="card-body">
+                        {{{body}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

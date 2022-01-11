@@ -1,0 +1,12 @@
+<ul class="list-group">
+    {{#ifeq auth_type 'SUB'}}
+        <a href="/subscription/add" class="list-group-item list-group-item-action active">+ Yeni Abonelik Ekle</a>
+    {{/ifeq}}
+    {{#each subscriptions}}
+        <a class="list-group-item list-group-item-action" href="/subscription/{{#ifeq ../auth_type 'PRO'}}edit{{else}}view{{/ifeq}}/{{this.id}}">
+            Abone No: <b>{{this.subscription_number}}</b><br>
+            Abone: <b>{{this.username}}</b><br>
+            Hizmet Sağlayıcı: <b>{{this.corporate_name}}</b><br>
+        </a>
+    {{/each}}
+</ul>

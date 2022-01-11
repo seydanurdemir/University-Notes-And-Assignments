@@ -1,0 +1,12 @@
+<ul class="list-group">
+    {{#ifeq auth_type 'SUB'}}
+        <a href="/promise/add" class="list-group-item list-group-item-action active">+ Yeni Ödeme Sözü Ekle</a>
+    {{/ifeq}}
+    {{#each promises}}
+        <a class="list-group-item list-group-item-action" href="/promise/{{#ifeq ../auth_type 'SUB'}}edit{{else}}view{{/ifeq}}/{{this.id}}">
+            Fatura No: <b>{{this.bill_number}}</b><br>
+            Durum: <b>{{#promiseStatus this.status_id}}{{/promiseStatus}}</b><br>
+            Söz Verilen Ödeme Tarihi: <b>{{this.due_date}}</b><br>
+        </a>
+    {{/each}}
+</ul>

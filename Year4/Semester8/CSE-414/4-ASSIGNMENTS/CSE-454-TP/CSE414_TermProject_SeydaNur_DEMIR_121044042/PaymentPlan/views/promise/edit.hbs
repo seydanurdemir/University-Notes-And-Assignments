@@ -1,0 +1,62 @@
+<form method="post" action="/promise/edit">
+    <input type="hidden" name="id" value="{{promise.id}}">
+    <div class="form-group">
+        <label for="user_id">Kullanıcı</label>
+        <select required class="form-control" name="user_id" id="user_id">
+            {{#each users}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../promise.user_id this.id}} selected {{/ifeq}}>
+                    {{this.username}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="subscription_id">Abonelik</label>
+        <select required class="form-control" name="subscription_id" id="subscription_id">
+            {{#each subscriptions}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../promise.subscription_id this.id}} selected {{/ifeq}}>
+                    {{this.subscription_number}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="bill_id">Fatura</label>
+        <select required class="form-control" name="bill_id" id="bill_id">
+            {{#each bills}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../promise.bill_id this.id}} selected {{/ifeq}}>
+                    {{this.bill_number}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="amount">Tutar</label>
+        <input value="{{bill.amount}}" disabled type="number" min="0.00" max="10000.00" step="0.01" class="form-control" id="amount" name="amount">
+    </div>
+    <div class="form-group">
+        <label for="due_date">Son Ödeme Tarihi</label>
+        <input value="{{bill.due_date}}" disabled autocomplete="off" type="date" class="form-control" id="due_date" name="due_date">
+    </div>
+    <div class="form-group">
+        <label for="end_date">Söz Tarihi</label>
+        <input  value="{{promise.promise_date}}"disabled autocomplete="off" type="date" class="form-control" id="promise_date" name="promise_date">
+    </div>
+    <div class="form-group">
+        <label for="end_date">Söz Verilen Ödeme Tarihi</label>
+        <input value="{{promise.due_date}}" required autocomplete="off" type="date" class="form-control" id="due_date" name="due_date">
+    </div>
+
+    <button type="submit" class="btn btn-primary" {{#ifeq ./promise.status_id 14}} disabled {{/ifeq}}>Kaydet</button>
+</form>
+<script>
+    var now = new Date();
+    var day = ("0" + now.getDate()).slice(-2);
+    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+    var today = now.getFullYear() + "-" + (month) + "-" + (day);
+    let dueDateInput = document.getElementById("due_date");
+    if (dueDateInput) dueDateInput.setAttribute("min", today);    
+</script>

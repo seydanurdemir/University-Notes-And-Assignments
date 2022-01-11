@@ -1,0 +1,40 @@
+<script>
+    function allowNumbersOnly(e) {
+        const regex = /^(\d{0,4})(\d{0,4})(\d{0,4})(\d{0,4})$/g
+        var event = e || window.event;
+        var key = String.fromCharCode(event.keyCode || event.which);
+        if (!regex.test(key)) {
+            event.preventDefault();
+        }
+    }
+    function joinSeperator() {
+        let cardNumberInput = document.getElementById("card_number");
+        var newVal = cardNumberInput.value.split("-").join(""); // remove hyphens
+        if (newVal.length > 0) {
+            newVal = newVal.match(new RegExp('.{1,4}', 'g')).join("-");
+        }
+        cardNumberInput.value = newVal;
+    }
+</script>
+<form method="post" action="/card/add">
+    <div class="form-group">
+        <label for="card_name">Kart Adı</label>
+        <input required autocomplete="off" type="text" class="form-control" id="card_name" name="card_name">
+    </div>
+    <div class="form-group">
+        <label for="card_number">Kart Numarası</label>
+        <input required autocomplete="off" type="text" class="form-control" id="card_number" name="card_number" minlength="19" maxlength="19" onkeypress="allowNumbersOnly(event)" onkeyup="joinSeperator()" placeholder="xxxx-xxxx-xxxx-xxxx">
+    </div>
+    <div class="form-group">
+        <label for="user_id">Kullanıcı</label>
+        <select required class="form-control" name="user_id" id="user_id">
+            {{#each users}}
+                <option value="{{this.id}}">
+                    {{this.username}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>

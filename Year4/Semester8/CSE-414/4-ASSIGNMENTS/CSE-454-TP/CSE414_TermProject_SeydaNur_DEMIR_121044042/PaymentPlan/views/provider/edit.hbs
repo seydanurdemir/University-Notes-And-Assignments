@@ -1,0 +1,42 @@
+<form method="post" action="/provider/edit">
+    <input type="hidden" name="id" value="{{provider.id}}">
+    <div class="form-group">
+        <label for="service_type_id">Servis Tipi</label>
+        <select required class="form-control" name="service_type_id" id="service_type_id">
+            {{#each serviceTypes}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../provider.service_type_id this.id}} selected {{/ifeq}}>
+                    {{this.description}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="corporate_name">Şirket Adı</label>
+        <input value="{{provider.corporate_name}}" required autocomplete="off" type="text" class="form-control" id="corporate_name" name="corporate_name">
+    </div>
+    <div class="form-group">
+        <label for="user_id">Kullanıcı</label>
+        <select class="form-control" name="user_id" id="user_id">
+            {{#each users}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../provider.user_id this.id}} selected {{/ifeq}}>
+                    {{this.username}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+{{!-- <h5 class="card-header mb-2">Etkinlikler</h5>
+<ul class="list-group">
+    <a href="/event/add/{{eventGroup.id}}" class="list-group-item list-group-item-action active">+ Yeni Etkinlik Ekle</a>
+    {{#each events}}
+        <a class="list-group-item list-group-item-action" href="/event/edit/{{this.id}}">
+            <b>{{../eventGroup.event_name}}</b><br>
+            Mekan: {{this.place_name}}<br>
+            Tarih: {{this.start_date}}<br>
+        </a>
+    {{/each}}
+</ul> --}}

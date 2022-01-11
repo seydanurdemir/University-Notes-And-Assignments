@@ -1,0 +1,85 @@
+<form method="post" action="/payment/create">
+    <input type="hidden" name="provider_id" id="provider_id" value="{{bill.provider_id}}">
+    <div class="form-group">
+        <label for="wallet_name">Cüzdan</label>
+        <input value="{{wallet.wallet_name}}" required disabled autocomplete="off" type="text" class="form-control" id="wallet_name">
+    </div>
+    <div class="form-group">
+        <label for="balance">Bakiye</label>
+        <input value="{{wallet.balance}}" disabled autocomplete="off" type="number" class="form-control" id="balance" min="0" max="999999.99">
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="form-group">
+        <label for="bill_id">Fatura</label>
+        <select required class="form-control" name="bill_id" id="bill_id" onchange="onChangeBill()">
+            <option value="-1">Seçiniz</option>
+            {{#each bills}}
+                <option value="{{this.bill_id}}" data-providerid="{{this.provider_id}}" data-amount="{{this.bill_amount}}" data-firstreaddate="{{this.first_read_date}}" data-lastreaddate="{{this.last_read_date}}" data-startdate="{{this.start_date}}" data-duedate="{{this.due_date}}">
+                    {{this.bill_number}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="amount">Tutar</label>
+        <input disabled type="number" min="0.00" max="10000.00" step="0.01" class="form-control" id="amount" name="amount">
+    </div>
+    <div class="form-group">
+        <label for="first_read_date">İlk Okuma Tarihi</label>
+        <input disabled autocomplete="off" type="date" class="form-control" id="first_read_date" name="first_read_date">
+    </div>
+    <div class="form-group">
+        <label for="last_read_date">Son Okuma Tarihi</label>
+        <input disabled autocomplete="off" type="date" class="form-control" id="last_read_date" name="last_read_date">
+    </div>
+    <div class="form-group">
+        <label for="start_date">İlk Ödeme Tarihi</label>
+        <input disabled required autocomplete="off" type="date" class="form-control" id="start_date" name="start_date">
+    </div>
+    <div class="form-group">
+        <label for="due_date">Son Ödeme Tarihi</label>
+        <input disabled autocomplete="off" type="date" class="form-control" id="due_date" name="due_date">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ödeme Yap</button>
+</form>
+<script>
+
+    let billSelect;
+    let providerInput;
+    let billAmountInput;
+    let billFirstReadDateInput;
+    let billLastReadDateInput;
+    let billStartDateInput;
+    let billDueDateInput;
+
+    (function() {
+
+        billSelect = document.getElementById("bill_id");
+        providerInput = document.getElementById("provider_id");
+        billAmountInput = document.getElementById("amount");
+        billFirstReadDateInput = document.getElementById("first_read_date");
+        billLastReadDateInput = document.getElementById("last_read_date");
+        billStartDateInput = document.getElementById("start_date");
+        billDueDateInput = document.getElementById("due_date");
+        
+        onChangeBill();
+    })();
+
+    function onChangeBill() {
+        var providerId = billSelect.options[billSelect.selectedIndex].getAttribute("data-providerid");
+        providerInput.value = providerId;
+        var amount = billSelect.options[billSelect.selectedIndex].getAttribute("data-amount");
+        billAmountInput.value = amount;
+        var firstReadDate = billSelect.options[billSelect.selectedIndex].getAttribute("data-firstreaddate");
+        billFirstReadDateInput.value = firstReadDate;
+        var lastReadDate = billSelect.options[billSelect.selectedIndex].getAttribute("data-lastreaddate");
+        billLastReadDateInput.value = lastReadDate;
+        var startDate = billSelect.options[billSelect.selectedIndex].getAttribute("data-startdate");
+        billStartDateInput.value = startDate;
+        var dueDate = billSelect.options[billSelect.selectedIndex].getAttribute("data-duedate");
+        billDueDateInput.value = dueDate;
+    }
+</script>

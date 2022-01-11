@@ -1,0 +1,31 @@
+<form method="post" action="/subscription/edit">
+    <input type="hidden" name="id" value="{{subscription.id}}">
+    <div class="form-group">
+        <label for="user_id">Kullanıcı</label>
+        <select required class="form-control" name="user_id" id="user_id">
+            {{#each users}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../subscription.user_id this.id}} selected {{/ifeq}}>
+                    {{this.username}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="provider_id">Hizmet Sağlayıcı</label>
+        <select required class="form-control" name="provider_id" id="provider_id">
+            {{#each providers}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../subscription.provider_id this.id}} selected {{/ifeq}}>
+                    {{this.corporate_name}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="end_date">Sona Erme Tarihi</label>
+        <input autocomplete="off" type="date" class="form-control" id="end_date" name="end_date" value="{{subscription.end_date}}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>

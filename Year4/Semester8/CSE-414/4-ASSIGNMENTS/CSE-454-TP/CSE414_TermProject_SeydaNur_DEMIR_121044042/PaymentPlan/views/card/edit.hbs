@@ -1,0 +1,55 @@
+<script>
+    function allowNumbersOnly(e) {
+        const regex = /^(\d{0,4})(\d{0,4})(\d{0,4})(\d{0,4})$/g
+        var event = e || window.event;
+        var key = String.fromCharCode(event.keyCode || event.which);
+        if (!regex.test(key)) {
+            event.preventDefault();
+        }
+    }
+    function joinSeperator() {
+        let cardNumberInput = document.getElementById("card_number");
+        var newVal = cardNumberInput.value.split("-").join(""); // remove hyphens
+        if (newVal.length > 0) {
+            newVal = newVal.match(new RegExp('.{1,4}', 'g')).join("-");
+        }
+        cardNumberInput.value = newVal;
+    }
+</script>
+<form method="post" action="/card/edit">
+    <input type="hidden" name="id" value="{{card.id}}">
+    <div class="form-group">
+        <label for="card_name">Kart Adı</label>
+        <input value="{{card.card_name}}" required autocomplete="off" type="text" class="form-control" id="card_name" name="card_name">
+    </div>
+    <div class="form-group">
+        <label for="card_number">Kart Numarası</label>
+        <input value="{{#formatCardNumber ./card.card_number}}{{/formatCardNumber}}" required autocomplete="off" type="text" class="form-control" id="card_number" name="card_number"  onkeypress="allowNumbersOnly(event)" onkeyup="joinSeperator()" minlength="19" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx">
+    </div>
+    <div class="form-group">
+        <label for="user_id">Kullanıcı</label>
+        <select required class="form-control" name="user_id" id="user_id">
+            {{#each users}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../card.user_id this.id}} selected {{/ifeq}}>
+                    {{this.username}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+<br />
+<h5 class="card-header mb-2">Transferler</h5>
+<hidden></hidden>
+<ul class="list-group">
+    {{#each transactions}}
+        <a class="list-group-item list-group-item-action">
+            Transfer No: <b>{{this.seq_num}}</b><br>
+            Transfer Tipi: <b>{{#transactionType this.transaction_type_id}}{{/transactionType}}</b><br>
+            Transfer Tutarı: <b>{{this.transaction_amount}}</b><br>
+            Tarih: <b>{{this.created_at}}</b><br>
+        </a>
+    {{/each}}
+</ul>

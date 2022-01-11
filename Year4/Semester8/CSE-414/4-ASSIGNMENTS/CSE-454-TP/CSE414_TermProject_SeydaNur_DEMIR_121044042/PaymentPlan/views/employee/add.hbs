@@ -1,0 +1,26 @@
+<form method="post" action="/employee/add">
+    <div class="form-group">
+        <label for="branch_id">Şube</label>
+        <select required class="form-control" name="branch_id" id="branch_id">
+            {{#each branchs}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../branch_id this.id}} selected {{/ifeq}}>
+                    {{this.branch_name}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="user_id">Kullanıcı</label>
+        <select required class="form-control" name="user_id" id="user_id">
+            {{#each users}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../user_id this.id}} selected {{/ifeq}}>
+                    {{this.username}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>

@@ -1,0 +1,14 @@
+<ul class="list-group">
+    {{#ifeq auth_type 'PRO'}}
+        <a href="/bill/add" class="list-group-item list-group-item-action active">+ Yeni Fatura Ekle</a>
+    {{/ifeq}}
+    {{#each bills}}
+        <a class="list-group-item list-group-item-action" href="/bill/{{#ifeq ../auth_type 'PRO'}}edit{{else}}view{{/ifeq}}/{{this.id}}">
+            Abone No: <b>{{this.subscription_number}}</b><br>
+            Fatura No: <b>{{this.bill_number}}</b><br>
+            Tutar: <b>{{this.amount}} ₺</b><br>
+            Fatura Tarihi: <b>{{this.start_date}}</b><br>
+            Son Ödeme Tarihi: <b>{{#formatDate this.due_date}}{{/formatDate}}</b><br>
+        </a>
+    {{/each}}
+</ul>

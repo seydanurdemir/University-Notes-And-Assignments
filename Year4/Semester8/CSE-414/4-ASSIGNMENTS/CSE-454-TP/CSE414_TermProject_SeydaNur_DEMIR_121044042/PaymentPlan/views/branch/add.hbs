@@ -1,0 +1,30 @@
+<form method="post" action="/branch/add">
+    <div class="form-group">
+        <label for="branch_name">Şube Adı</label>
+        <input required autocomplete="off" type="text" class="form-control" id="branch_name" name="branch_name">
+    </div>
+    <div class="form-group">
+        <label for="branch_code">Şube Kodu</label>
+        <input required autocomplete="off" type="text" class="form-control" id="branch_code" name="branch_code">
+    </div>
+    <div class="form-group">
+        <label for="branch_type_id">Şube Tipi</label>
+        <select required class="form-control" name="branch_type_id" id="branch_type_id">
+            {{#each branchTypes}}
+                <option value="{{this.id}}">
+                    {{this.description}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefon</label>
+        <input autocomplete="off" type="tel" class="form-control" id="phone" name="phone" placeholder="5xx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </div>
+    <div class="form-group">
+        <label for="address">Adres</label>
+        <input autocomplete="off" type="text" class="form-control" id="address" name="address" maxlength="255">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>

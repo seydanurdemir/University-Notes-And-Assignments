@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <a href="/employee/add" class="list-group-item list-group-item-action active">+ Yeni Çalışan Ekle</a>
+    {{#each employees}}
+        <a class="list-group-item list-group-item-action" href="/employee/edit/{{this.user_id}}">
+            Kullanıcı: <b>{{this.username}}</b><br>
+            Şube: <b>{{this.branch_name}}</b><br>
+        </a>
+    {{/each}}
+</ul>

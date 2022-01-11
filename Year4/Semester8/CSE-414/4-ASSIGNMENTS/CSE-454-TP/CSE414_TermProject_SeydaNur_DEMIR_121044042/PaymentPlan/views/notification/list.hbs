@@ -1,0 +1,28 @@
+<script src="/js/script.js"></script>
+<ul class="list-group">
+    {{#each notifications}}
+        <div class="row list-group-item list-group-item-action" id="row_{{this.id}}" style="display: flex !important;">
+            <div class="col-11">
+                {{this.text}}<br><br>
+                {{this.created_at}}<br>
+            </div>
+            <div class="col-1">
+                <a class="btn btn-primary mt-3 mb-3" href="#" data-rowid="{{this.id}}" onclick="markAsRead(this)">X</a>
+            </div>
+        </div>
+    {{/each}}
+</ul>
+<script>
+
+    let rows = document.getElementsByClassName("row");
+
+    function markAsRead(e) {
+        var rowId = e.getAttribute("data-rowid");
+        var row = document.getElementById("row_" + rowId);
+        
+        ajaxPost("/notification/mark_as_read", { id: rowId }, function(response) {
+            if (response && response.data >= 1)
+                row.parentNode.removeChild(row);
+        });
+    }
+</script>

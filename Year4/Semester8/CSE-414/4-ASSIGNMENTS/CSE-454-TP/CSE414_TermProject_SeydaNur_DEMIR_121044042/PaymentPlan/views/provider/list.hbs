@@ -1,0 +1,11 @@
+<ul class="list-group">
+    {{#ifeq auth_type 'EMP'}}
+        <a href="/provider/add" class="list-group-item list-group-item-action active">+ Yeni Hizmet Sağlayıcı Ekle</a>
+    {{/ifeq}}
+    {{#each providers}}
+        <a class="list-group-item list-group-item-action" href="/provider/edit/{{this.id}}">
+            Şirket Adı: <b>{{this.corporate_name}}</b><br>
+            Servis Tipi: <b>{{#serviceType this.service_type_id}}{{/serviceType}}</b><br>
+        </a>
+    {{/each}}
+</ul>

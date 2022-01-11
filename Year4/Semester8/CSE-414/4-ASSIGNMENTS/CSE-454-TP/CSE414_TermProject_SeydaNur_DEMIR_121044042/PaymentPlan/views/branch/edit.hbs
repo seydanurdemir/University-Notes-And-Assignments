@@ -1,0 +1,44 @@
+<form method="post" action="/branch/edit">
+    <input type="hidden" name="id" value="{{branch.id}}">
+    <div class="form-group">
+        <label for="branch_name">Şube Adı</label>
+        <input value="{{branch.branch_name}}" required autocomplete="off" type="text" class="form-control" id="branch_name" name="branch_name">
+    </div>
+    <div class="form-group">
+        <label for="branch_code">Şube Kodu</label>
+        <input value="{{branch.branch_code}}" required autocomplete="off" type="text" class="form-control" id="branch_code" name="branch_code">
+    </div>
+    <div class="form-group">
+        <label for="branch_type_id">Şube Tipi</label>
+        <select required class="form-control" name="branch_type_id" id="branch_type_id">
+            {{#each branchTypes}}
+                <option value="{{this.id}}"
+                    {{#ifeq ../branch.branch_type_id this.id}} selected {{/ifeq}}>
+                    {{this.description}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefon</label>
+        <input value="{{branch.phone}}" autocomplete="off" type="tel" class="form-control" id="phone" name="phone" placeholder="5xx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </div>
+    <div class="form-group">
+        <label for="address">Adres</label>
+        <input value="{{branch.address}}" autocomplete="off" type="text" class="form-control" id="address" name="address" maxlength="255">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+<br />
+<h5 class="card-header mb-2">Çalışanlar</h5>
+<ul class="list-group">
+    <a href="/employee/add/{{branch.id}}" class="list-group-item list-group-item-action active">+ Yeni Çalışan Ekle</a>
+    {{#each employees}}
+        <a class="list-group-item list-group-item-action" href="/employee/edit/{{this.user_id}}">
+            <b>{{this.username}}</b><br>
+            Aktif: {{this.is_valid}}<br>
+            Tarih: {{this.created_at}}<br>
+        </a>
+    {{/each}}
+</ul>

@@ -1,0 +1,31 @@
+<form>
+    <input type="hidden" name="id" value="{{wallet.id}}">
+    <div class="form-group">
+        <label for="wallet_name">Cüzdan</label>
+        <input value="{{wallet.wallet_name}}" required disabled autocomplete="off" type="text" class="form-control" id="wallet_name">
+    </div>
+    <div class="form-group">
+        <label for="username">Kullanıcı</label>
+        <input value="{{wallet.username}}"disabled autocomplete="off" type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="form-group">
+        <label for="balance">Bakiye</label>
+        <input value="{{wallet.balance}}" required disabled autocomplete="off" type="number" class="form-control" id="balance" min="0" max="999999.99">
+    </div>
+</form>
+<br />
+<h5 class="card-header mb-2">Transferler</h5>
+<hidden></hidden>
+{{#ifeq auth_type 'SUB'}}
+    <a class="btn btn-primary mt-3 mb-3" href="/wallet/upload">Bakiye Yükle</a>
+{{/ifeq}}
+<ul class="list-group">
+    {{#each transactions}}
+        <a class="list-group-item list-group-item-action">
+            Transfer No: <b>{{this.seq_num}}</b><br>
+            Transfer Tipi: <b>{{#transactionType this.transaction_type_id}}{{/transactionType}}</b><br>
+            Transfer Tutarı: <b>{{this.transaction_amount}}</b><br>
+            Tarih: <b>{{this.created_at}}</b><br>
+        </a>
+    {{/each}}
+</ul>

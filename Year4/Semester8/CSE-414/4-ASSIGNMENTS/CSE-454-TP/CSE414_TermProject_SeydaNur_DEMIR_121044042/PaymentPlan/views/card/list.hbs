@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <a href="/card/add" class="list-group-item list-group-item-action active">+ Yeni Kart Ekle</a>
+    {{#each cards}}
+        <a class="list-group-item list-group-item-action" href="/card/edit/{{this.id}}">
+            Kart Adı: <b>{{this.card_name}}</b><br>
+            Kart Numarası: <b>{{this.card_number}}</b><br>
+        </a>
+    {{/each}}
+</ul>

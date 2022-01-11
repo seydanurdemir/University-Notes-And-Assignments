@@ -1,0 +1,34 @@
+<form method="post" action="/user/add">
+    <div class="form-group">
+        <label for="username">Kullanıcı Adı</label>
+        <input required autocomplete="off" type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="form-group">
+        <label for="password">Şifre</label>
+        <input required autocomplete="off" type="password" class="form-control" id="password" name="password">
+    </div>
+    <div class="form-group">
+        <label for="email">E-posta</label>
+        <input required autocomplete="off" type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="user_type_id">Kullanıcı Tipi</label>
+        <select required class="form-control" name="user_type_id" id="user_type_id">
+            {{#each userTypes}}
+                <option value="{{this.id}}">
+                    {{this.description}}
+                </option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefon</label>
+        <input autocomplete="off" type="tel" class="form-control" id="phone" name="phone" placeholder="5xx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </div>
+    <div class="form-group">
+        <label for="address">Adres</label>
+        <input autocomplete="off" type="text" class="form-control" id="address" name="address" maxlength="255">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

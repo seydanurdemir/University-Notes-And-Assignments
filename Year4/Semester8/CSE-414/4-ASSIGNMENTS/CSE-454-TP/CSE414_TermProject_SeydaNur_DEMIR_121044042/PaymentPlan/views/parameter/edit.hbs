@@ -1,0 +1,17 @@
+<form method="post" action="/parameter/edit">
+    <input type="hidden" name="id" value="{{parameter.id}}">
+    <div class="form-group">
+        <label for="code">Parametre Kodu</label>
+        <input value="{{parameter.code}}" required autocomplete="off" type="text" class="form-control" id="code" name="code">
+    </div>
+    <div class="form-group">
+        <label for="value">Parametre Değeri</label>
+        <input value="{{parameter.value}}" required autocomplete="off" type="text" class="form-control" id="value" name="value">
+    </div>
+    <div class="form-group">
+        <label for="description">Parametre Açıklaması</label>
+        <input value="{{parameter.description}}" required autocomplete="off" type="text" class="form-control" id="description" name="description">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

@@ -1,0 +1,12 @@
+<ul class="list-group">
+    {{#each transactions}}
+        <a class="list-group-item list-group-item-action" aria-disabled="true">
+            Transfer No: <b>{{this.seq_num}}</b><br>            
+            Kaynak: <b>{{this.source}}</b><br>
+            Hedef: <b>{{this.destination}}</b><br>
+            Tutarı: <b>{{this.transaction_amount}} ₺</b><br>
+            Kanal Tipi: <b>{{#channelType this.channel_type_id}}{{/channelType}}</b><br>            
+            Tarih: <b>{{this.created_at}}</b><br>
+        </a>
+    {{/each}}
+</ul>

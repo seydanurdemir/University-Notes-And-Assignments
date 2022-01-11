@@ -1,0 +1,8 @@
+<ul class="list-group">
+    {{#each wallets}}
+        <a class="list-group-item list-group-item-action" href="/wallet/edit/{{this.id}}">
+            Kullanıcı: <b>{{this.username}}</b><br>
+            Cüzdan: <b>{{this.wallet_name}}</b><br>
+        </a>
+    {{/each}}
+</ul>
