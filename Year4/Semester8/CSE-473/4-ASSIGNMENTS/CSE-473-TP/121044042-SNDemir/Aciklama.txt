@@ -1,0 +1,6 @@
+-------------------------
+| .docx : Rapor dosyasi |
+| .pdf  : Rapor dosyasi |
+| .pptx : Sunum dosyasi |
+| .txt  : Aciklama      |
+-------------------------
